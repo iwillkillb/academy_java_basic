@@ -23,19 +23,21 @@ import java.util.Scanner;
 public class Grade {
 
 	public static void main(String[] args) {
+		// 1. 선언, 2. 초기화
 		int score = -1;
 		char grade = '?';
-		
+		// 스캐너 변수 초기화
 		Scanner scan = new Scanner(System.in);
 		
 		while (score > 100 || score < 0 ) {
+			// 무엇을 해야 하는가?, 스캐너를 사용하여 score 변수 재설정
 			System.out.print("0~100사이의 점수를 입력 : ");
 			score = scan.nextInt();
-			
-			if (score <= 100 && score >= 0 ) {
+			// 3. 사용 : score에 입력된 값을 판단.
+			if (score <= 100 && score >= 0 ) {	// score를 범위 내에 제대로 넣었을 경우
 				if (score >= 90) {
 					grade = 'A';
-				} else if (score >= 80) {
+				} else if (score >= 80) {	// else if 조건은 위의 조건을 만족하지 못한 경우.
 					grade = 'B';
 				} else if (score >= 60) {
 					grade = 'C';
@@ -44,8 +46,8 @@ public class Grade {
 				} else {
 					grade = 'F';
 				}
-				System.out.println(score + "점에 해당하는 학점은 " + grade + "입니다.");
-			} else {
+				System.out.printf("%d점에 해당하는 학점은 %c입니다.%n", score, grade);
+			} else {	// score를 범위 내에 제대로 넣지 않았을 경우
 				System.out.println("알 수 없는 점수입니다.");
 			}
 		}

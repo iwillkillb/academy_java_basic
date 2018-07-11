@@ -23,8 +23,11 @@ import java.util.Arrays;
  *
  */
 public class Warehouse {
+	
 	// 1. 멤버변수 선언부
 	Product[] products;
+	
+	
 	
 	// 2. 생성자 선언부
 	// 기본 생성자 : 창고를 처음 지을 때 어떻게 짓는지 방법을 알려주는 생성자.
@@ -33,6 +36,7 @@ public class Warehouse {
 		this.products = new Product[0];
 	}
 	
+	// 매개변수가 있는 생성자
 	Warehouse (Product[] products) {
 		this.products = products;
 	}
@@ -40,6 +44,8 @@ public class Warehouse {
 	Warehouse (int size) {
 		this.products = new Product[size];
 	}*/
+	
+	
 	
 	// 3. 메소드 선언부
 	/**
@@ -49,7 +55,7 @@ public class Warehouse {
 	 */
 	public void add (Product product) {
 		// 이미 존재하는 배열의 크기 + 1 길이로 복사
-		this.products = Arrays.copyOf(products, products.length);
+		this.products = Arrays.copyOf(products, products.length + 1);
 		// 마지막 인덱스에 신규 제품 정보 입력
 		this.products[products.length - 1] = product;
 	}
@@ -85,33 +91,36 @@ public class Warehouse {
 	 * 판매하지 않을 제품 정보를 폐기
 	 * @param product
 	 */
-	public void remove (Product product) {
+	public void remove(Product product) {
 		// 폐기할 제품이 위치하는 인덱스
 		int rmIndex = -1;
-		rmIndex = findProductIdx (product);
+		rmIndex = findProductIdx(product);
 		
-		// 삭제되지 않는 제품들을 유지할 새 배열
+		// 삭제 안된 제품을 유지할 새 배열
 		Product[] newProducts;
 		
 		if (rmIndex > -1) {
 			newProducts = new Product[this.products.length - 1];
 			
-			// 1. rmIndex가 배열 중간일 때
+			// 1. rmIndex 가 배열 중간일 때			
 			if (rmIndex < (products.length - 1)) {
-				// 삭제할 제품의 앞쪽까지 복사
+				// 삭제할 제품 앞쪽까지 복사
 				for (int idx = 0; idx < rmIndex; idx++) {
 					newProducts[idx] = products[idx];
 				}
-				// 삭제할 제품의 뒤쪽부터 끝까지 복사
+				
+				// 삭제할 제품 뒷쪽부터 끝까지 복사
 				for (int idx = rmIndex; idx < newProducts.length; idx++) {
-					newProducts[idx] = products[idx];
+					newProducts[idx] = products[idx + 1];					
 				}
+
 			} else {
-				// 2. rmIndex가 배열 마지막일 때
+			// 2. rmIndex 가 배열 마지막일 때
 				for (int idx = 0; idx < products.length - 1; idx++) {
 					newProducts[idx] = products[idx];
 				}
 			}
+			this.products = newProducts;
 		}
 	} // method remove end
 	
@@ -165,4 +174,5 @@ public class Warehouse {
 		}
 		return index;
 	}
+	
 }

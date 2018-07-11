@@ -37,7 +37,7 @@ public class Product {
 	
 	// 필드 출력
 	void print () {
-		System.out.printf("번호 %s \t|\t 품명 %s \t|\t 가격 %d \t|\t 재고 %d \n", prodCode, prodName, price, quantity);
+		System.out.printf("번호 : %s, 품명 : %s, 가격 : %,6d, 재고 : %3d \n", prodCode, prodName, price, quantity);
 	}
 	// 할인가 반환
 	int discount (double percentage) {

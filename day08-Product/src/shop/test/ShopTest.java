@@ -1,11 +1,16 @@
 package shop.test;
 
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Map;
+import java.util.Set;
 
 import shop.GeneralWarehouse;
 import shop.ListWarehouse;
 import shop.Manager;
+import shop.MapWarehouse;
 import shop.Product;
 import shop.Shop;
 
@@ -20,11 +25,14 @@ public class ShopTest {
 		// 1. 창고에 들여놓을 제품 선반이 먼저 필요.
 		Product[] products = new Product[0];
 		List<Product> prods = new ArrayList<Product> ();
-		
+		Set<Product> prodsSet = new HashSet<>();
+		Map<String, Product> prodsMap = new HashMap<>();
 		
 		// 2. 선반을 설치할 창고를 지어야 함.
-		GeneralWarehouse warehouse = new ListWarehouse (prods);
+		//GeneralWarehouse warehouse = new SetWareHouse(prodSets);
+		//GeneralWarehouse warehouse = new ListWarehouse (prods);
 		//GeneralWarehouse warehouse = new ArrayWarehouse (products);
+		GeneralWarehouse warehouse = new MapWarehouse(prodsMap);
 		
 		// 3. 매장을 관리할 매니저를 고용함.
 		Manager manager = new Manager (warehouse);

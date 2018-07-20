@@ -1,0 +1,274 @@
+2018-07-20 17:18:29,964 DEBUG .a.i.l.LogFactory [main Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2018-07-20 17:18:30,039 DEBUG .a.i.d.p.PooledDataSource [main PooledDataSource forcefully closed/removed all connections.
+2018-07-20 17:18:30,040 DEBUG .a.i.d.p.PooledDataSource [main PooledDataSource forcefully closed/removed all connections.
+2018-07-20 17:18:30,040 DEBUG .a.i.d.p.PooledDataSource [main PooledDataSource forcefully closed/removed all connections.
+2018-07-20 17:18:30,040 DEBUG .a.i.d.p.PooledDataSource [main PooledDataSource forcefully closed/removed all connections.
+2018-07-20 17:18:30,097 DEBUG .a.i.t.j.JdbcTransaction [main Opening JDBC Connection
+2018-07-20 17:18:30,283 DEBUG .a.i.d.p.PooledDataSource [main Created connection 992802731.
+2018-07-20 17:18:30,284 DEBUG .a.i.t.j.JdbcTransaction [main Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@3b2cf7ab]
+2018-07-20 17:18:30,285 DEBUG .m.B.isExists [main ==>  Preparing: SELECT b.BOOKID FROM book b WHERE b.BOOKID = ? 
+2018-07-20 17:18:30,340 DEBUG .m.B.isExists [main ==> Parameters: BK001(String)
+2018-07-20 17:18:30,366 DEBUG .m.B.isExists [main <==      Total: 0
+2018-07-20 17:18:30,366 DEBUG .a.i.t.j.JdbcTransaction [main Resetting autocommit to true on JDBC Connection [oracle.jdbc.driver.T4CConnection@3b2cf7ab]
+2018-07-20 17:18:30,366 DEBUG .a.i.t.j.JdbcTransaction [main Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@3b2cf7ab]
+2018-07-20 17:18:30,367 DEBUG .a.i.d.p.PooledDataSource [main Returned connection 992802731 to pool.
+2018-07-20 17:18:30,367 DEBUG .a.i.t.j.JdbcTransaction [main Opening JDBC Connection
+2018-07-20 17:18:30,367 DEBUG .a.i.d.p.PooledDataSource [main Checked out connection 992802731 from pool.
+2018-07-20 17:18:30,367 DEBUG .m.B.insert [main ==>  Preparing: INSERT INTO book ( bookId , title , author , price , isbn , publish) VALUES (?, ?, ?, ?, ?, ?) 
+2018-07-20 17:18:30,367 DEBUG .m.B.insert [main ==> Parameters: BK001(String), 하루의 취향(String), 김민철(String), 13500(Integer), 9791188850167(String), 북라이프(String)
+2018-07-20 17:18:30,371 DEBUG .m.B.insert [main <==    Updates: 1
+2018-07-20 17:18:30,371 DEBUG .a.i.t.j.JdbcTransaction [main Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@3b2cf7ab]
+2018-07-20 17:18:30,371 DEBUG .a.i.d.p.PooledDataSource [main Returned connection 992802731 to pool.
+2018-07-20 17:18:30,371 DEBUG .a.i.t.j.JdbcTransaction [main Opening JDBC Connection
+2018-07-20 17:18:30,371 DEBUG .a.i.d.p.PooledDataSource [main Checked out connection 992802731 from pool.
+2018-07-20 17:18:30,371 DEBUG .a.i.t.j.JdbcTransaction [main Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@3b2cf7ab]
+2018-07-20 17:18:30,371 DEBUG .m.B.isExists [main ==>  Preparing: SELECT b.BOOKID FROM book b WHERE b.BOOKID = ? 
+2018-07-20 17:18:30,371 DEBUG .m.B.isExists [main ==> Parameters: BK002(String)
+2018-07-20 17:18:30,372 DEBUG .m.B.isExists [main <==      Total: 0
+2018-07-20 17:18:30,372 DEBUG .a.i.t.j.JdbcTransaction [main Resetting autocommit to true on JDBC Connection [oracle.jdbc.driver.T4CConnection@3b2cf7ab]
+2018-07-20 17:18:30,372 DEBUG .a.i.t.j.JdbcTransaction [main Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@3b2cf7ab]
+2018-07-20 17:18:30,372 DEBUG .a.i.d.p.PooledDataSource [main Returned connection 992802731 to pool.
+2018-07-20 17:18:30,373 DEBUG .a.i.t.j.JdbcTransaction [main Opening JDBC Connection
+2018-07-20 17:18:30,373 DEBUG .a.i.d.p.PooledDataSource [main Checked out connection 992802731 from pool.
+2018-07-20 17:18:30,373 DEBUG .m.B.insert [main ==>  Preparing: INSERT INTO book ( bookId , title , author , price , isbn , publish) VALUES (?, ?, ?, ?, ?, ?) 
+2018-07-20 17:18:30,373 DEBUG .m.B.insert [main ==> Parameters: BK002(String), 어머니의 나라(String), 추 와이홍(String), 13800(Integer), 9788965962687(String), 흐름출판(String)
+2018-07-20 17:18:30,374 DEBUG .m.B.insert [main <==    Updates: 1
+2018-07-20 17:18:30,374 DEBUG .a.i.t.j.JdbcTransaction [main Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@3b2cf7ab]
+2018-07-20 17:18:30,374 DEBUG .a.i.d.p.PooledDataSource [main Returned connection 992802731 to pool.
+2018-07-20 17:18:30,375 DEBUG .a.i.t.j.JdbcTransaction [main Opening JDBC Connection
+2018-07-20 17:18:30,375 DEBUG .a.i.d.p.PooledDataSource [main Checked out connection 992802731 from pool.
+2018-07-20 17:18:30,375 DEBUG .a.i.t.j.JdbcTransaction [main Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@3b2cf7ab]
+2018-07-20 17:18:30,376 DEBUG .m.B.isExists [main ==>  Preparing: SELECT b.BOOKID FROM book b WHERE b.BOOKID = ? 
+2018-07-20 17:18:30,376 DEBUG .m.B.isExists [main ==> Parameters: BK003(String)
+2018-07-20 17:18:30,376 DEBUG .m.B.isExists [main <==      Total: 0
+2018-07-20 17:18:30,377 DEBUG .a.i.t.j.JdbcTransaction [main Resetting autocommit to true on JDBC Connection [oracle.jdbc.driver.T4CConnection@3b2cf7ab]
+2018-07-20 17:18:30,377 DEBUG .a.i.t.j.JdbcTransaction [main Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@3b2cf7ab]
+2018-07-20 17:18:30,377 DEBUG .a.i.d.p.PooledDataSource [main Returned connection 992802731 to pool.
+2018-07-20 17:18:30,377 DEBUG .a.i.t.j.JdbcTransaction [main Opening JDBC Connection
+2018-07-20 17:18:30,377 DEBUG .a.i.d.p.PooledDataSource [main Checked out connection 992802731 from pool.
+2018-07-20 17:18:30,377 DEBUG .m.B.insert [main ==>  Preparing: INSERT INTO book ( bookId , title , author , price , isbn , publish) VALUES (?, ?, ?, ?, ?, ?) 
+2018-07-20 17:18:30,378 DEBUG .m.B.insert [main ==> Parameters: BK003(String), 굿 나이트 스토리즈 포 레벨 걸스(String), 엘레나 파빌리, 프란체스카 카발로(String), 22000(Integer), 9788934981824(String), 주니어김영사(String)
+2018-07-20 17:18:30,409 DEBUG .a.i.t.j.JdbcTransaction [main Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@3b2cf7ab]
+2018-07-20 17:18:30,409 DEBUG .a.i.d.p.PooledDataSource [main Returned connection 992802731 to pool.
+2018-07-20 17:25:18,682 DEBUG .a.i.l.LogFactory [main Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2018-07-20 17:25:18,757 DEBUG .a.i.d.p.PooledDataSource [main PooledDataSource forcefully closed/removed all connections.
+2018-07-20 17:25:18,758 DEBUG .a.i.d.p.PooledDataSource [main PooledDataSource forcefully closed/removed all connections.
+2018-07-20 17:25:18,758 DEBUG .a.i.d.p.PooledDataSource [main PooledDataSource forcefully closed/removed all connections.
+2018-07-20 17:25:18,758 DEBUG .a.i.d.p.PooledDataSource [main PooledDataSource forcefully closed/removed all connections.
+2018-07-20 17:25:18,814 DEBUG .a.i.t.j.JdbcTransaction [main Opening JDBC Connection
+2018-07-20 17:25:18,961 DEBUG .a.i.d.p.PooledDataSource [main Created connection 992802731.
+2018-07-20 17:25:18,961 DEBUG .a.i.t.j.JdbcTransaction [main Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@3b2cf7ab]
+2018-07-20 17:25:18,962 DEBUG .m.B.isExists [main ==>  Preparing: SELECT b.BOOKID FROM book b WHERE b.BOOKID = ? 
+2018-07-20 17:25:19,017 DEBUG .m.B.isExists [main ==> Parameters: BK001(String)
+2018-07-20 17:25:19,037 DEBUG .m.B.isExists [main <==      Total: 1
+2018-07-20 17:25:19,037 DEBUG .a.i.t.j.JdbcTransaction [main Resetting autocommit to true on JDBC Connection [oracle.jdbc.driver.T4CConnection@3b2cf7ab]
+2018-07-20 17:25:19,037 DEBUG .a.i.t.j.JdbcTransaction [main Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@3b2cf7ab]
+2018-07-20 17:25:19,037 DEBUG .a.i.d.p.PooledDataSource [main Returned connection 992802731 to pool.
+2018-07-20 17:25:42,187 DEBUG .a.i.l.LogFactory [main Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2018-07-20 17:25:42,264 DEBUG .a.i.d.p.PooledDataSource [main PooledDataSource forcefully closed/removed all connections.
+2018-07-20 17:25:42,264 DEBUG .a.i.d.p.PooledDataSource [main PooledDataSource forcefully closed/removed all connections.
+2018-07-20 17:25:42,264 DEBUG .a.i.d.p.PooledDataSource [main PooledDataSource forcefully closed/removed all connections.
+2018-07-20 17:25:42,264 DEBUG .a.i.d.p.PooledDataSource [main PooledDataSource forcefully closed/removed all connections.
+2018-07-20 17:25:42,321 DEBUG .a.i.t.j.JdbcTransaction [main Opening JDBC Connection
+2018-07-20 17:25:42,475 DEBUG .a.i.d.p.PooledDataSource [main Created connection 992802731.
+2018-07-20 17:25:42,475 DEBUG .a.i.t.j.JdbcTransaction [main Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@3b2cf7ab]
+2018-07-20 17:25:42,477 DEBUG .m.B.isExists [main ==>  Preparing: SELECT b.BOOKID FROM book b WHERE b.BOOKID = ? 
+2018-07-20 17:25:42,533 DEBUG .m.B.isExists [main ==> Parameters: BK001(String)
+2018-07-20 17:25:42,552 DEBUG .m.B.isExists [main <==      Total: 1
+2018-07-20 17:25:42,553 DEBUG .a.i.t.j.JdbcTransaction [main Resetting autocommit to true on JDBC Connection [oracle.jdbc.driver.T4CConnection@3b2cf7ab]
+2018-07-20 17:25:42,553 DEBUG .a.i.t.j.JdbcTransaction [main Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@3b2cf7ab]
+2018-07-20 17:25:42,553 DEBUG .a.i.d.p.PooledDataSource [main Returned connection 992802731 to pool.
+2018-07-20 17:25:57,518 DEBUG .a.i.l.LogFactory [main Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2018-07-20 17:25:57,618 DEBUG .a.i.d.p.PooledDataSource [main PooledDataSource forcefully closed/removed all connections.
+2018-07-20 17:25:57,619 DEBUG .a.i.d.p.PooledDataSource [main PooledDataSource forcefully closed/removed all connections.
+2018-07-20 17:25:57,619 DEBUG .a.i.d.p.PooledDataSource [main PooledDataSource forcefully closed/removed all connections.
+2018-07-20 17:25:57,619 DEBUG .a.i.d.p.PooledDataSource [main PooledDataSource forcefully closed/removed all connections.
+2018-07-20 17:25:57,692 DEBUG .a.i.t.j.JdbcTransaction [main Opening JDBC Connection
+2018-07-20 17:25:57,841 DEBUG .a.i.d.p.PooledDataSource [main Created connection 992802731.
+2018-07-20 17:25:57,841 DEBUG .a.i.t.j.JdbcTransaction [main Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@3b2cf7ab]
+2018-07-20 17:25:57,842 DEBUG .m.B.isExists [main ==>  Preparing: SELECT b.BOOKID FROM book b WHERE b.BOOKID = ? 
+2018-07-20 17:25:57,897 DEBUG .m.B.isExists [main ==> Parameters: BK001(String)
+2018-07-20 17:25:57,918 DEBUG .m.B.isExists [main <==      Total: 1
+2018-07-20 17:25:57,919 DEBUG .a.i.t.j.JdbcTransaction [main Resetting autocommit to true on JDBC Connection [oracle.jdbc.driver.T4CConnection@3b2cf7ab]
+2018-07-20 17:25:57,919 DEBUG .a.i.t.j.JdbcTransaction [main Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@3b2cf7ab]
+2018-07-20 17:25:57,919 DEBUG .a.i.d.p.PooledDataSource [main Returned connection 992802731 to pool.
+2018-07-20 17:25:57,920 DEBUG .a.i.t.j.JdbcTransaction [main Opening JDBC Connection
+2018-07-20 17:25:57,920 DEBUG .a.i.d.p.PooledDataSource [main Checked out connection 992802731 from pool.
+2018-07-20 17:25:57,920 DEBUG .a.i.t.j.JdbcTransaction [main Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@3b2cf7ab]
+2018-07-20 17:25:57,920 DEBUG .m.B.isExists [main ==>  Preparing: SELECT b.BOOKID FROM book b WHERE b.BOOKID = ? 
+2018-07-20 17:25:57,920 DEBUG .m.B.isExists [main ==> Parameters: BK002(String)
+2018-07-20 17:25:57,921 DEBUG .m.B.isExists [main <==      Total: 1
+2018-07-20 17:25:57,921 DEBUG .a.i.t.j.JdbcTransaction [main Resetting autocommit to true on JDBC Connection [oracle.jdbc.driver.T4CConnection@3b2cf7ab]
+2018-07-20 17:25:57,921 DEBUG .a.i.t.j.JdbcTransaction [main Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@3b2cf7ab]
+2018-07-20 17:25:57,921 DEBUG .a.i.d.p.PooledDataSource [main Returned connection 992802731 to pool.
+2018-07-20 17:25:57,921 DEBUG .a.i.t.j.JdbcTransaction [main Opening JDBC Connection
+2018-07-20 17:25:57,922 DEBUG .a.i.d.p.PooledDataSource [main Checked out connection 992802731 from pool.
+2018-07-20 17:25:57,922 DEBUG .a.i.t.j.JdbcTransaction [main Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@3b2cf7ab]
+2018-07-20 17:25:57,922 DEBUG .m.B.isExists [main ==>  Preparing: SELECT b.BOOKID FROM book b WHERE b.BOOKID = ? 
+2018-07-20 17:25:57,922 DEBUG .m.B.isExists [main ==> Parameters: BK003(String)
+2018-07-20 17:25:57,922 DEBUG .m.B.isExists [main <==      Total: 0
+2018-07-20 17:25:57,922 DEBUG .a.i.t.j.JdbcTransaction [main Resetting autocommit to true on JDBC Connection [oracle.jdbc.driver.T4CConnection@3b2cf7ab]
+2018-07-20 17:25:57,923 DEBUG .a.i.t.j.JdbcTransaction [main Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@3b2cf7ab]
+2018-07-20 17:25:57,923 DEBUG .a.i.d.p.PooledDataSource [main Returned connection 992802731 to pool.
+2018-07-20 17:25:57,923 DEBUG .a.i.t.j.JdbcTransaction [main Opening JDBC Connection
+2018-07-20 17:25:57,923 DEBUG .a.i.d.p.PooledDataSource [main Checked out connection 992802731 from pool.
+2018-07-20 17:25:57,923 DEBUG .m.B.insert [main ==>  Preparing: INSERT INTO book ( bookId , title , author , price , isbn , publish) VALUES (?, ?, ?, ?, ?, ?) 
+2018-07-20 17:25:57,923 DEBUG .m.B.insert [main ==> Parameters: BK003(String), 굿 나이트 스토리즈 포 레벨 걸스(String), 엘레나 파빌리, 프란체스카 카발로(String), 22000(Integer), 9788934981824(String), 주니어김영사(String)
+2018-07-20 17:25:57,926 DEBUG .a.i.t.j.JdbcTransaction [main Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@3b2cf7ab]
+2018-07-20 17:25:57,926 DEBUG .a.i.d.p.PooledDataSource [main Returned connection 992802731 to pool.
+2018-07-20 17:31:04,752 DEBUG .a.i.l.LogFactory [main Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2018-07-20 17:31:04,828 DEBUG .a.i.d.p.PooledDataSource [main PooledDataSource forcefully closed/removed all connections.
+2018-07-20 17:31:04,828 DEBUG .a.i.d.p.PooledDataSource [main PooledDataSource forcefully closed/removed all connections.
+2018-07-20 17:31:04,828 DEBUG .a.i.d.p.PooledDataSource [main PooledDataSource forcefully closed/removed all connections.
+2018-07-20 17:31:04,828 DEBUG .a.i.d.p.PooledDataSource [main PooledDataSource forcefully closed/removed all connections.
+2018-07-20 17:31:04,886 DEBUG .a.i.t.j.JdbcTransaction [main Opening JDBC Connection
+2018-07-20 17:31:05,033 DEBUG .a.i.d.p.PooledDataSource [main Created connection 992802731.
+2018-07-20 17:31:05,033 DEBUG .a.i.t.j.JdbcTransaction [main Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@3b2cf7ab]
+2018-07-20 17:31:05,034 DEBUG .m.B.isExists [main ==>  Preparing: SELECT b.BOOKID FROM book b WHERE b.BOOKID = ? 
+2018-07-20 17:31:05,097 DEBUG .m.B.isExists [main ==> Parameters: BK001(String)
+2018-07-20 17:31:05,117 DEBUG .m.B.isExists [main <==      Total: 1
+2018-07-20 17:31:05,118 DEBUG .a.i.t.j.JdbcTransaction [main Resetting autocommit to true on JDBC Connection [oracle.jdbc.driver.T4CConnection@3b2cf7ab]
+2018-07-20 17:31:05,118 DEBUG .a.i.t.j.JdbcTransaction [main Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@3b2cf7ab]
+2018-07-20 17:31:05,118 DEBUG .a.i.d.p.PooledDataSource [main Returned connection 992802731 to pool.
+2018-07-20 17:31:22,507 DEBUG .a.i.l.LogFactory [main Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2018-07-20 17:31:22,585 DEBUG .a.i.d.p.PooledDataSource [main PooledDataSource forcefully closed/removed all connections.
+2018-07-20 17:31:22,585 DEBUG .a.i.d.p.PooledDataSource [main PooledDataSource forcefully closed/removed all connections.
+2018-07-20 17:31:22,585 DEBUG .a.i.d.p.PooledDataSource [main PooledDataSource forcefully closed/removed all connections.
+2018-07-20 17:31:22,585 DEBUG .a.i.d.p.PooledDataSource [main PooledDataSource forcefully closed/removed all connections.
+2018-07-20 17:31:22,644 DEBUG .a.i.t.j.JdbcTransaction [main Opening JDBC Connection
+2018-07-20 17:31:22,791 DEBUG .a.i.d.p.PooledDataSource [main Created connection 992802731.
+2018-07-20 17:31:22,792 DEBUG .a.i.t.j.JdbcTransaction [main Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@3b2cf7ab]
+2018-07-20 17:31:22,794 DEBUG .m.B.isExists [main ==>  Preparing: SELECT b.BOOKID FROM book b WHERE b.BOOKID = ? 
+2018-07-20 17:31:22,852 DEBUG .m.B.isExists [main ==> Parameters: BK001(String)
+2018-07-20 17:31:22,871 DEBUG .m.B.isExists [main <==      Total: 0
+2018-07-20 17:31:22,872 DEBUG .a.i.t.j.JdbcTransaction [main Resetting autocommit to true on JDBC Connection [oracle.jdbc.driver.T4CConnection@3b2cf7ab]
+2018-07-20 17:31:22,872 DEBUG .a.i.t.j.JdbcTransaction [main Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@3b2cf7ab]
+2018-07-20 17:31:22,872 DEBUG .a.i.d.p.PooledDataSource [main Returned connection 992802731 to pool.
+2018-07-20 17:31:22,872 DEBUG .a.i.t.j.JdbcTransaction [main Opening JDBC Connection
+2018-07-20 17:31:22,872 DEBUG .a.i.d.p.PooledDataSource [main Checked out connection 992802731 from pool.
+2018-07-20 17:31:22,873 DEBUG .m.B.insert [main ==>  Preparing: INSERT INTO book ( bookId , title , author , price , isbn , publish) VALUES (?, ?, ?, ?, ?, ?) 
+2018-07-20 17:31:22,873 DEBUG .m.B.insert [main ==> Parameters: BK001(String), 하루의 취향(String), 김민철(String), 13500(Integer), 9791188850167(String), 북라이프(String)
+2018-07-20 17:31:22,875 DEBUG .m.B.insert [main <==    Updates: 1
+2018-07-20 17:31:22,875 DEBUG .a.i.t.j.JdbcTransaction [main Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@3b2cf7ab]
+2018-07-20 17:31:22,875 DEBUG .a.i.d.p.PooledDataSource [main Returned connection 992802731 to pool.
+2018-07-20 17:31:22,875 DEBUG .a.i.t.j.JdbcTransaction [main Opening JDBC Connection
+2018-07-20 17:31:22,875 DEBUG .a.i.d.p.PooledDataSource [main Checked out connection 992802731 from pool.
+2018-07-20 17:31:22,876 DEBUG .a.i.t.j.JdbcTransaction [main Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@3b2cf7ab]
+2018-07-20 17:31:22,876 DEBUG .m.B.isExists [main ==>  Preparing: SELECT b.BOOKID FROM book b WHERE b.BOOKID = ? 
+2018-07-20 17:31:22,876 DEBUG .m.B.isExists [main ==> Parameters: BK002(String)
+2018-07-20 17:31:22,876 DEBUG .m.B.isExists [main <==      Total: 0
+2018-07-20 17:31:22,876 DEBUG .a.i.t.j.JdbcTransaction [main Resetting autocommit to true on JDBC Connection [oracle.jdbc.driver.T4CConnection@3b2cf7ab]
+2018-07-20 17:31:22,877 DEBUG .a.i.t.j.JdbcTransaction [main Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@3b2cf7ab]
+2018-07-20 17:31:22,877 DEBUG .a.i.d.p.PooledDataSource [main Returned connection 992802731 to pool.
+2018-07-20 17:31:22,877 DEBUG .a.i.t.j.JdbcTransaction [main Opening JDBC Connection
+2018-07-20 17:31:22,877 DEBUG .a.i.d.p.PooledDataSource [main Checked out connection 992802731 from pool.
+2018-07-20 17:31:22,877 DEBUG .m.B.insert [main ==>  Preparing: INSERT INTO book ( bookId , title , author , price , isbn , publish) VALUES (?, ?, ?, ?, ?, ?) 
+2018-07-20 17:31:22,877 DEBUG .m.B.insert [main ==> Parameters: BK002(String), 어머니의 나라(String), 추 와이홍(String), 13800(Integer), 9788965962687(String), 흐름출판(String)
+2018-07-20 17:31:22,878 DEBUG .m.B.insert [main <==    Updates: 1
+2018-07-20 17:31:22,878 DEBUG .a.i.t.j.JdbcTransaction [main Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@3b2cf7ab]
+2018-07-20 17:31:22,878 DEBUG .a.i.d.p.PooledDataSource [main Returned connection 992802731 to pool.
+2018-07-20 17:31:22,878 DEBUG .a.i.t.j.JdbcTransaction [main Opening JDBC Connection
+2018-07-20 17:31:22,879 DEBUG .a.i.d.p.PooledDataSource [main Checked out connection 992802731 from pool.
+2018-07-20 17:31:22,879 DEBUG .a.i.t.j.JdbcTransaction [main Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@3b2cf7ab]
+2018-07-20 17:31:22,879 DEBUG .m.B.isExists [main ==>  Preparing: SELECT b.BOOKID FROM book b WHERE b.BOOKID = ? 
+2018-07-20 17:31:22,880 DEBUG .m.B.isExists [main ==> Parameters: BK003(String)
+2018-07-20 17:31:22,880 DEBUG .m.B.isExists [main <==      Total: 0
+2018-07-20 17:31:22,880 DEBUG .a.i.t.j.JdbcTransaction [main Resetting autocommit to true on JDBC Connection [oracle.jdbc.driver.T4CConnection@3b2cf7ab]
+2018-07-20 17:31:22,880 DEBUG .a.i.t.j.JdbcTransaction [main Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@3b2cf7ab]
+2018-07-20 17:31:22,880 DEBUG .a.i.d.p.PooledDataSource [main Returned connection 992802731 to pool.
+2018-07-20 17:31:22,881 DEBUG .a.i.t.j.JdbcTransaction [main Opening JDBC Connection
+2018-07-20 17:31:22,881 DEBUG .a.i.d.p.PooledDataSource [main Checked out connection 992802731 from pool.
+2018-07-20 17:31:22,881 DEBUG .m.B.insert [main ==>  Preparing: INSERT INTO book ( bookId , title , author , price , isbn , publish) VALUES (?, ?, ?, ?, ?, ?) 
+2018-07-20 17:31:22,881 DEBUG .m.B.insert [main ==> Parameters: BK003(String), 굿 나이트 스토리즈 포 레벨 걸스(String), 엘레나 파빌리 외(String), 22000(Integer), 9788934981824(String), 주니어김영사(String)
+2018-07-20 17:31:22,883 DEBUG .a.i.t.j.JdbcTransaction [main Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@3b2cf7ab]
+2018-07-20 17:31:22,884 DEBUG .a.i.d.p.PooledDataSource [main Returned connection 992802731 to pool.
+2018-07-20 17:32:29,019 DEBUG .a.i.l.LogFactory [main Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2018-07-20 17:32:29,095 DEBUG .a.i.d.p.PooledDataSource [main PooledDataSource forcefully closed/removed all connections.
+2018-07-20 17:32:29,096 DEBUG .a.i.d.p.PooledDataSource [main PooledDataSource forcefully closed/removed all connections.
+2018-07-20 17:32:29,096 DEBUG .a.i.d.p.PooledDataSource [main PooledDataSource forcefully closed/removed all connections.
+2018-07-20 17:32:29,096 DEBUG .a.i.d.p.PooledDataSource [main PooledDataSource forcefully closed/removed all connections.
+2018-07-20 17:32:29,155 DEBUG .a.i.t.j.JdbcTransaction [main Opening JDBC Connection
+2018-07-20 17:32:29,299 DEBUG .a.i.d.p.PooledDataSource [main Created connection 992802731.
+2018-07-20 17:32:29,299 DEBUG .a.i.t.j.JdbcTransaction [main Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@3b2cf7ab]
+2018-07-20 17:32:29,301 DEBUG .m.B.isExists [main ==>  Preparing: SELECT b.BOOKID FROM book b WHERE b.BOOKID = ? 
+2018-07-20 17:32:29,356 DEBUG .m.B.isExists [main ==> Parameters: BK001(String)
+2018-07-20 17:32:29,375 DEBUG .m.B.isExists [main <==      Total: 0
+2018-07-20 17:32:29,375 DEBUG .a.i.t.j.JdbcTransaction [main Resetting autocommit to true on JDBC Connection [oracle.jdbc.driver.T4CConnection@3b2cf7ab]
+2018-07-20 17:32:29,375 DEBUG .a.i.t.j.JdbcTransaction [main Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@3b2cf7ab]
+2018-07-20 17:32:29,375 DEBUG .a.i.d.p.PooledDataSource [main Returned connection 992802731 to pool.
+2018-07-20 17:32:29,376 DEBUG .a.i.t.j.JdbcTransaction [main Opening JDBC Connection
+2018-07-20 17:32:29,376 DEBUG .a.i.d.p.PooledDataSource [main Checked out connection 992802731 from pool.
+2018-07-20 17:32:29,376 DEBUG .m.B.insert [main ==>  Preparing: INSERT INTO book ( bookId , title , author , price , isbn , publish) VALUES (?, ?, ?, ?, ?, ?) 
+2018-07-20 17:32:29,376 DEBUG .m.B.insert [main ==> Parameters: BK001(String), 하루의 취향(String), 김민철(String), 13500(Integer), 9791188850167(String), 북라이프(String)
+2018-07-20 17:32:29,378 DEBUG .m.B.insert [main <==    Updates: 1
+2018-07-20 17:32:29,379 DEBUG .a.i.t.j.JdbcTransaction [main Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@3b2cf7ab]
+2018-07-20 17:32:29,379 DEBUG .a.i.d.p.PooledDataSource [main Returned connection 992802731 to pool.
+2018-07-20 17:32:29,379 DEBUG .a.i.t.j.JdbcTransaction [main Opening JDBC Connection
+2018-07-20 17:32:29,379 DEBUG .a.i.d.p.PooledDataSource [main Checked out connection 992802731 from pool.
+2018-07-20 17:32:29,379 DEBUG .a.i.t.j.JdbcTransaction [main Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@3b2cf7ab]
+2018-07-20 17:32:29,379 DEBUG .m.B.isExists [main ==>  Preparing: SELECT b.BOOKID FROM book b WHERE b.BOOKID = ? 
+2018-07-20 17:32:29,379 DEBUG .m.B.isExists [main ==> Parameters: BK002(String)
+2018-07-20 17:32:29,380 DEBUG .m.B.isExists [main <==      Total: 0
+2018-07-20 17:32:29,380 DEBUG .a.i.t.j.JdbcTransaction [main Resetting autocommit to true on JDBC Connection [oracle.jdbc.driver.T4CConnection@3b2cf7ab]
+2018-07-20 17:32:29,380 DEBUG .a.i.t.j.JdbcTransaction [main Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@3b2cf7ab]
+2018-07-20 17:32:29,380 DEBUG .a.i.d.p.PooledDataSource [main Returned connection 992802731 to pool.
+2018-07-20 17:32:29,381 DEBUG .a.i.t.j.JdbcTransaction [main Opening JDBC Connection
+2018-07-20 17:32:29,381 DEBUG .a.i.d.p.PooledDataSource [main Checked out connection 992802731 from pool.
+2018-07-20 17:32:29,381 DEBUG .m.B.insert [main ==>  Preparing: INSERT INTO book ( bookId , title , author , price , isbn , publish) VALUES (?, ?, ?, ?, ?, ?) 
+2018-07-20 17:32:29,381 DEBUG .m.B.insert [main ==> Parameters: BK002(String), 어머니의 나라(String), 추 와이홍(String), 13800(Integer), 9788965962687(String), 흐름출판(String)
+2018-07-20 17:32:29,382 DEBUG .m.B.insert [main <==    Updates: 1
+2018-07-20 17:32:29,382 DEBUG .a.i.t.j.JdbcTransaction [main Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@3b2cf7ab]
+2018-07-20 17:32:29,382 DEBUG .a.i.d.p.PooledDataSource [main Returned connection 992802731 to pool.
+2018-07-20 17:32:29,382 DEBUG .a.i.t.j.JdbcTransaction [main Opening JDBC Connection
+2018-07-20 17:32:29,382 DEBUG .a.i.d.p.PooledDataSource [main Checked out connection 992802731 from pool.
+2018-07-20 17:32:29,383 DEBUG .a.i.t.j.JdbcTransaction [main Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@3b2cf7ab]
+2018-07-20 17:32:29,383 DEBUG .m.B.isExists [main ==>  Preparing: SELECT b.BOOKID FROM book b WHERE b.BOOKID = ? 
+2018-07-20 17:32:29,383 DEBUG .m.B.isExists [main ==> Parameters: BK003(String)
+2018-07-20 17:32:29,384 DEBUG .m.B.isExists [main <==      Total: 0
+2018-07-20 17:32:29,384 DEBUG .a.i.t.j.JdbcTransaction [main Resetting autocommit to true on JDBC Connection [oracle.jdbc.driver.T4CConnection@3b2cf7ab]
+2018-07-20 17:32:29,384 DEBUG .a.i.t.j.JdbcTransaction [main Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@3b2cf7ab]
+2018-07-20 17:32:29,384 DEBUG .a.i.d.p.PooledDataSource [main Returned connection 992802731 to pool.
+2018-07-20 17:32:29,384 DEBUG .a.i.t.j.JdbcTransaction [main Opening JDBC Connection
+2018-07-20 17:32:29,384 DEBUG .a.i.d.p.PooledDataSource [main Checked out connection 992802731 from pool.
+2018-07-20 17:32:29,384 DEBUG .m.B.insert [main ==>  Preparing: INSERT INTO book ( bookId , title , author , price , isbn , publish) VALUES (?, ?, ?, ?, ?, ?) 
+2018-07-20 17:32:29,385 DEBUG .m.B.insert [main ==> Parameters: BK003(String), 굿 나이트 스토리즈 포 레벨 걸스(String), 엘레나 파빌리, 프란체스카 카발로(String), 22000(Integer), 9788934981824(String), 주니어김영사(String)
+2018-07-20 17:32:29,386 DEBUG .m.B.insert [main <==    Updates: 1
+2018-07-20 17:32:29,386 DEBUG .a.i.t.j.JdbcTransaction [main Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@3b2cf7ab]
+2018-07-20 17:32:29,386 DEBUG .a.i.d.p.PooledDataSource [main Returned connection 992802731 to pool.
+2018-07-20 17:32:52,504 DEBUG .a.i.l.LogFactory [main Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2018-07-20 17:32:52,583 DEBUG .a.i.d.p.PooledDataSource [main PooledDataSource forcefully closed/removed all connections.
+2018-07-20 17:32:52,583 DEBUG .a.i.d.p.PooledDataSource [main PooledDataSource forcefully closed/removed all connections.
+2018-07-20 17:32:52,584 DEBUG .a.i.d.p.PooledDataSource [main PooledDataSource forcefully closed/removed all connections.
+2018-07-20 17:32:52,584 DEBUG .a.i.d.p.PooledDataSource [main PooledDataSource forcefully closed/removed all connections.
+2018-07-20 17:32:52,642 DEBUG .a.i.t.j.JdbcTransaction [main Opening JDBC Connection
+2018-07-20 17:32:52,792 DEBUG .a.i.d.p.PooledDataSource [main Created connection 992802731.
+2018-07-20 17:32:52,792 DEBUG .a.i.t.j.JdbcTransaction [main Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@3b2cf7ab]
+2018-07-20 17:32:52,794 DEBUG .m.B.isExists [main ==>  Preparing: SELECT b.BOOKID FROM book b WHERE b.BOOKID = ? 
+2018-07-20 17:32:52,852 DEBUG .m.B.isExists [main ==> Parameters: BK001(String)
+2018-07-20 17:32:52,872 DEBUG .m.B.isExists [main <==      Total: 1
+2018-07-20 17:32:52,873 DEBUG .a.i.t.j.JdbcTransaction [main Resetting autocommit to true on JDBC Connection [oracle.jdbc.driver.T4CConnection@3b2cf7ab]
+2018-07-20 17:32:52,873 DEBUG .a.i.t.j.JdbcTransaction [main Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@3b2cf7ab]
+2018-07-20 17:32:52,873 DEBUG .a.i.d.p.PooledDataSource [main Returned connection 992802731 to pool.
+2018-07-20 17:33:13,313 DEBUG .a.i.l.LogFactory [main Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2018-07-20 17:33:13,393 DEBUG .a.i.d.p.PooledDataSource [main PooledDataSource forcefully closed/removed all connections.
+2018-07-20 17:33:13,393 DEBUG .a.i.d.p.PooledDataSource [main PooledDataSource forcefully closed/removed all connections.
+2018-07-20 17:33:13,393 DEBUG .a.i.d.p.PooledDataSource [main PooledDataSource forcefully closed/removed all connections.
+2018-07-20 17:33:13,393 DEBUG .a.i.d.p.PooledDataSource [main PooledDataSource forcefully closed/removed all connections.
+2018-07-20 17:33:13,452 DEBUG .a.i.t.j.JdbcTransaction [main Opening JDBC Connection
+2018-07-20 17:33:13,608 DEBUG .a.i.d.p.PooledDataSource [main Created connection 992802731.
+2018-07-20 17:33:13,608 DEBUG .a.i.t.j.JdbcTransaction [main Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@3b2cf7ab]
+2018-07-20 17:33:13,610 DEBUG .m.B.isExists [main ==>  Preparing: SELECT b.BOOKID FROM book b WHERE b.BOOKID = ? 
+2018-07-20 17:33:13,663 DEBUG .m.B.isExists [main ==> Parameters: BK001(String)
+2018-07-20 17:33:13,683 DEBUG .m.B.isExists [main <==      Total: 1
+2018-07-20 17:33:13,684 DEBUG .a.i.t.j.JdbcTransaction [main Resetting autocommit to true on JDBC Connection [oracle.jdbc.driver.T4CConnection@3b2cf7ab]
+2018-07-20 17:33:13,684 DEBUG .a.i.t.j.JdbcTransaction [main Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@3b2cf7ab]
+2018-07-20 17:33:13,684 DEBUG .a.i.d.p.PooledDataSource [main Returned connection 992802731 to pool.
+2018-07-20 17:33:13,685 DEBUG .a.i.t.j.JdbcTransaction [main Opening JDBC Connection
+2018-07-20 17:33:13,685 DEBUG .a.i.d.p.PooledDataSource [main Checked out connection 992802731 from pool.
+2018-07-20 17:33:13,686 DEBUG .a.i.t.j.JdbcTransaction [main Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@3b2cf7ab]
+2018-07-20 17:33:13,686 DEBUG .m.B.selectAll [main ==>  Preparing: SELECT b.BOOKID , b.TITLE , b.AUTHOR , b.PRICE , b.ISBN , b.PUBLISH FROM book b 
+2018-07-20 17:33:13,686 DEBUG .m.B.selectAll [main ==> Parameters: 
+2018-07-20 17:33:13,691 DEBUG .m.B.selectAll [main <==      Total: 3
+2018-07-20 17:33:13,691 DEBUG .a.i.t.j.JdbcTransaction [main Resetting autocommit to true on JDBC Connection [oracle.jdbc.driver.T4CConnection@3b2cf7ab]
+2018-07-20 17:33:13,691 DEBUG .a.i.t.j.JdbcTransaction [main Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@3b2cf7ab]
+2018-07-20 17:33:13,691 DEBUG .a.i.d.p.PooledDataSource [main Returned connection 992802731 to pool.

@@ -39,8 +39,29 @@ public class MybatisWarehouse implements GeneralWarehouse {
 
 	@Override
 	public int remove(Product product) throws NotFoundException {
-		// TODO Auto-generated method stub
-		return 0;
+		// 삭제할 대상 제품이 있는지 선 조회
+		if (!isExists(product) ) {
+			throw new NotFoundException("삭제", product);
+		}
+		
+		// 1. SqlSession 얻기 : DML작업은 auto-commit을 활성화.
+		SqlSession session = factory.openSession(true);
+		int rmCnt = 0;
+		
+		// 2. Mapper 인터페이스 객체를 session에서 얻기
+		ProductMapper mapper;
+		mapper = session.getMapper(ProductMapper.class);
+		
+		try {
+			// 3. mapper를 통하여 삭제 진행
+			rmCnt = mapper.deleteOne(product);
+		} finally {
+			if (session != null) {
+				session.close();
+			}
+		}
+		
+		return rmCnt;
 	}
 
 	@Override
